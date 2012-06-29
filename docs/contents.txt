@@ -1,8 +1,8 @@
 .. _contents:
 
-=============================
-Django documentation contents
-=============================
+==================================
+Conteúdo de Documentação do Django
+==================================
 
 .. toctree::
     :hidden:
@@ -22,19 +22,18 @@ Django documentation contents
     releases/index
     internals/index
 
-Indices, glossary and tables
-============================
+Índices, Glossários e Tabelas
+=============================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`glossary`
 
-Deprecated/obsolete documentation
+Documentação depreciada/obsoleta
 =================================
 
-The following documentation covers features that have been deprecated or that
-have been replaced in newer versions of Django.
-
+A documentação seguinte cobre características que estão obsoletas ou que foram
+substituidas nas novas versões do Django.
 .. toctree::
    :maxdepth: 2
 

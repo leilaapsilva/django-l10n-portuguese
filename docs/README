@@ -1,18 +1,18 @@
-The documentation in this tree is in plain text files and can be viewed using
-any text file viewer.
+A documentação nessa árvore está em texto plano e pode ser vista usando
+qualquer visualizador de arquivo texto.
 
-Technically speaking, it uses ReST (reStructuredText) [1], and the Sphinx
-documentation system [2].  This allows it to be built into other forms for
-easier viewing and browsing.
+Tecnicamente falando, essa usa ReST (reStructuredText) [1], e o sistema de
+documentação Sphinx [2]. Isso possibilita que essa documentação seja facilmente
+vista em navegada.
 
-To create an HTML version of the docs:
+Para criar uma versão HTML dos docs:
 
-* Install Sphinx (using ``sudo pip install Sphinx`` or some other method)
+* Instale o Sphinx (usando ``sudo pip install Sphinx`` ou algum outro método)
 
-* In this docs/ directory, type ``make html`` (or ``make.bat html`` on
-  Windows) at a shell prompt.
+* No diretório /docs, digite ``make html`` (ou ``make.bat html`` para windows)
+no prompt do shell.
 
-The documentation in _build/html/index.html can then be viewed in a web browser.
+A documentação em _build/html/index.html pode então ser vista em um browser.
 
 [1] http://docutils.sourceforge.net/rst.html
 [2] http://sphinx.pocoo.org/
