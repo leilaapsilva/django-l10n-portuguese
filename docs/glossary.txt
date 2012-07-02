@@ -6,70 +6,66 @@ Glossary
 
 .. glossary::
 
-    field
-        An attribute on a :term:`model`; a given field usually maps directly to
-        a single database column.
+    campo
+        Um atributo de um :term:`modelo`; um dado campo usualmente mapea diretamente
+        uma unica coluna do banco de dados.
 
-        See :doc:`/topics/db/models`.
+        Veja :doc:`/topics/db/models`.
 
-    generic view
-        A higher-order :term:`view` function that provides an abstract/generic
-        implementation of a common idiom or pattern found in view development.
+    view genérica
+        Uma função do tipo :term:`view` de ordem maior que provê uma abraimplementação genérica/abstrata
+        de um padrão ou idioma comum encontrado no desenvolvimento de utroas views.
 
-        See :doc:`/ref/generic-views`.
+        Veja:`/ref/generic-views`.
 
     model
-        Models store your application's data.
+        Modelos armazenam os dados da sua aplicação .
 
-        See :doc:`/topics/db/models`.
+        Veja:`/topics/db/models`.
 
     MTV
-        "Model-template-view"; a software pattern, similar in style to MVC, but
-        a better description of the way Django does things.
+        "Model-template-view"; um padrão de desenvolvimento de software, similar em estilo ao 'MVC', mas que é uma melhor descrição do jeito como o Django faz as coisas.
 
-        See :ref:`the FAQ entry <faq-mtv>`.
+        Veja:`the FAQ entry <faq-mtv>`.
 
     MVC
-        `Model-view-controller`__; a software pattern. Django :ref:`follows MVC
-        to some extent <faq-mtv>`.
+        `Model-view-controller`__;um padrão de desenvolvimento de software. Django :ref:` veja MVC para mais detalhes <faq-mtv>`.
 
         __ http://en.wikipedia.org/wiki/Model-view-controller
 
     project
-        A Python package -- i.e. a directory of code -- that contains all the
-        settings for an instance of Django. This would include database
-        configuration, Django-specific options and application-specific
-        settings.
+        Um pacote python -- ex. um diretório de código -- que contém todos os
+        settings de uma instância do DJango. Este pode incluir a configuração do
+        banco de dados, opções específicas do Django, e configurações específicas da aplicação.
 
     property
-        Also known as "managed attributes", and a feature of Python since
-        version 2.2. This is a neat way to implement attributes whose usage
-        resembles attribute access, but whose implementation uses method calls.
+        Também conhecido como "atributos gerenciáveis", e uma característica
+        de python desde a versão 2.2. Esta é uma maneira elegante de criar atributos
+        que são acessíveis como atributos, mas que podem ser implementados através de chamadas de métodos.
 
-        See :func:`property`.
+        Vejac:`property`.
 
     queryset
-        An object representing some set of rows to be fetched from the database.
+        um objeto que representa um conjunto de linhas a ser lido do banco de dados.
 
-        See :doc:`/topics/db/queries`.
+        Veja:`/topics/db/queries`.
 
     slug
-        A short label for something, containing only letters, numbers,
-        underscores or hyphens. They're generally used in URLs. For
-        example, in a typical blog entry URL:
+        Um label curto que contém somente letras, números,
+        underscores ou hífens. São usitlizados geralmente em URL's,
+        por exemplo, uma típica url de blog.
 
         .. parsed-literal::
 
             https://www.djangoproject.com/weblog/2008/apr/12/**spring**/
 
-        the last bit (``spring``) is the slug.
+        o ultimo bit (``spring``) é o slug.
 
     template
-        A chunk of text that acts as formatting for representing data. A
-        template helps to abstract the presentation of data from the data
-        itself.
+        um pedaço de texto que funciona como um formatador para a representação de um dado.
+        Um template ajuda a abstrair a apresentação de um dado a partir do próprio dado.
 
-        See :doc:`/topics/templates`.
+        Veja:`/topics/templates`.
 
     view
-        A function responsible for rending a page.
+        Uma função responsável por retornar uma página.
