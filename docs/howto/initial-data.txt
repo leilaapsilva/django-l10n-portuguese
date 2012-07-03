@@ -5,13 +5,13 @@ Provendo dados inicias para os modelos
 As vezes é útil pré popular seu banco de dados com dados pré-definidos quando
 você está iniciando sua aplicação pela primeira vez. Existem algumas formas do
 Django criar esse dados automaticamente: você pode prover
-`dados iniciais usando fixtures`_, ou pode prover `dados inicias em SQL`_.
+`dados iniciais usando fixtures`_ , ou pode prover `dados inicias em SQL`_ .
 
 De maneira geral, usar uma fixture é um métodos simples desde que o banco de
 dados seja agnóstico, mas dados inicias com SQL podem ser um pouco mais
 flexíveis.
 
-.. _dados inicias em sql: `provendo dados inicias em sql`_
+.. _dados inicias em SQL: `provendo-dados-inicias-em-sql`_
 .. _dados iniciais usando fixtures: `dados-iniciais-usando-fixtures`_
 
 .. _dados-iniciais-usando-fixtures:
@@ -100,7 +100,7 @@ the usual directories.
     Fixtures are also used by the :ref:`testing framework
     <topics-testing-fixtures>` to help set up a consistent test environment.
 
-.. _initial-sql:
+.. _provendo-dados-inicias-em-sql:
 
 Providing initial SQL data
 ==========================
