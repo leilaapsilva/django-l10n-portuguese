@@ -12,7 +12,7 @@ dados seja agnóstico, mas dados inicias com SQL podem ser um pouco mais
 flexíveis.
 
 .. _dados inicias em sql: `provendo dados inicias em sql`_
-.. _dados iniciais usando fixtures: `provendo dados inicias com fixture`_
+.. _dados iniciais usando fixtures: `dados-iniciais-usando-fixtures`_
 
 .. _dados-iniciais-usando-fixtures:
 
