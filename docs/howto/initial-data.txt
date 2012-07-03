@@ -11,7 +11,7 @@ De maneira geral, usar uma fixture é um métodos simples desde que o banco de
 dados seja agnóstico, mas dados inicias com SQL podem ser um pouco mais
 flexíveis.
 
-.. _dados inicias com sql: `provendo dados inicias em sql`_
+.. _dados inicias em sql: `provendo dados inicias em sql`_
 .. _dados iniciais usando fixtures: `provendo dados inicias com fixture`_
 
 .. _dados-iniciais-usando-fixtures:
@@ -27,8 +27,8 @@ ou documento JSON. A :doc:`documentação de serialização </topics/serializati
 tem mais detalhes sobre cada
 :ref:`formatos de serialização <serialization-formats>`.
 
-As an example, though, here's what a fixture for a simple ``Person`` model might
-look like in JSON:
+Como exemplo, aqui está como uma fixture, de um model ``Person`` simples, parece
+em JSON:
 
 .. code-block:: js
 
@@ -51,7 +51,7 @@ look like in JSON:
       }
     ]
 
-And here's that same fixture as YAML:
+E aqui está a mesma fixture em YAML:
 
 .. code-block:: none
 
@@ -66,7 +66,8 @@ And here's that same fixture as YAML:
         first_name: Paul
         last_name: McCartney
 
-You'll store this data in a ``fixtures`` directory inside your app.
+Você deve armazenar esses dados em um diretório chamado ``fixtures`` dentro
+da sua aplicação.
 
 Loading data is easy: just call :djadmin:`manage.py loaddata <fixturename>
 <loaddata>`, where ``<fixturename>`` is the name of the fixture file you've
