@@ -1,3 +1,7 @@
+.. META INFORMAÇÕES DA TRADUÇÃO
+.. Tradução: Denis Costa
+.. Revisão:
+
 ======================================
 Provendo dados inicias para os modelos
 ======================================
@@ -104,29 +108,30 @@ procura normal nos diretórios.
 
 .. _provendo-dados-inicias-em-sql:
 
-Providing initial SQL data
-==========================
+Provendo dados inicias em SQL
+=============================
 
-Django provides a hook for passing the database arbitrary SQL that's executed
-just after the CREATE TABLE statements when you run :djadmin:`syncdb`. You can
-use this hook to populate default records, or you could also create SQL
-functions, views, triggers, etc.
+Django provê um mecanismo que para passar para o banco de dados um SQL qualquer
+que é executado logo após o CREATE TABLE quando você executa :djadmin:`syncdb`.
+Você pode usar isso para popular com registro pré definidos, ou você poderia
+criar funções, views, triggers SQL e etc.
 
-The hook is simple: Django just looks for a file called ``sql/<modelname>.sql``,
-in your app directory, where ``<modelname>`` is the model's name in lowercase.
+O mecanismo é simples: O Django procura pór um arquivo chamado
+``sql/<modelname>.sql``, no diretório da sua aplicação, onde ``<modelname>`` é
+o nome do modelo em minúsculo.
 
-So, if you had a ``Person`` model in an app called ``myapp``, you could add
-arbitrary SQL to the file ``sql/person.sql`` inside your ``myapp`` directory.
-Here's an example of what the file might contain:
+Então, se você tiver um model ``Person`` na sua aplicação chamada ``myapp``,
+você pode adicionar um SQL qualquer ao arquivo ``sql/person.sql`` dentro do
+diretório ``myapp``. Aqui tem exemplo do que o arquivo pode conter:
 
 .. code-block:: sql
 
     INSERT INTO myapp_person (first_name, last_name) VALUES ('John', 'Lennon');
     INSERT INTO myapp_person (first_name, last_name) VALUES ('Paul', 'McCartney');
 
-Each SQL file, if given, is expected to contain valid SQL statements
-which will insert the desired data (e.g., properly-formatted
-``INSERT`` statements separated by semicolons).
+Cada arquivo SQL, caso ele exista, é esperado que contenha comando SQL válidos
+que irão inserir os dados desejados (e.g., comandos ``INSERT`` devidamente
+formatados e separados por ponto e virgula).
 
 The SQL files are read by the :djadmin:`sqlcustom`, :djadmin:`sqlreset`,
 :djadmin:`sqlall` and :djadmin:`reset` commands in :doc:`manage.py
