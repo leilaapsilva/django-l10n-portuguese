@@ -16,17 +16,17 @@ Glossary
         Uma função do tipo :term:`view` de ordem maior que provê uma abraimplementação genérica/abstrata
         de um padrão ou idioma comum encontrado no desenvolvimento de utroas views.
 
-        Veja:`/ref/generic-views`.
+        Veja :doc:`/ref/generic-views`.
 
     model
         Modelos armazenam os dados da sua aplicação .
 
-        Veja:`/topics/db/models`.
+        Veja :doc:`/topics/db/models`.
 
     MTV
         "Model-template-view"; um padrão de desenvolvimento de software, similar em estilo ao 'MVC', mas que é uma melhor descrição do jeito como o Django faz as coisas.
 
-        Veja:`the FAQ entry <faq-mtv>`.
+        Veja :ref:`the FAQ entry <faq-mtv>`.
 
     MVC
         `Model-view-controller`__;um padrão de desenvolvimento de software. Django :ref:` veja MVC para mais detalhes <faq-mtv>`.
@@ -43,12 +43,12 @@ Glossary
         de python desde a versão 2.2. Esta é uma maneira elegante de criar atributos
         que são acessíveis como atributos, mas que podem ser implementados através de chamadas de métodos.
 
-        Vejac:`property`.
+        Vejac :func:`property`.
 
     queryset
         um objeto que representa um conjunto de linhas a ser lido do banco de dados.
 
-        Veja:`/topics/db/queries`.
+        Veja :doc:`/topics/db/queries`.
 
     slug
         Um label curto que contém somente letras, números,
@@ -65,7 +65,7 @@ Glossary
         um pedaço de texto que funciona como um formatador para a representação de um dado.
         Um template ajuda a abstrair a apresentação de um dado a partir do próprio dado.
 
-        Veja:`/topics/templates`.
+        Veja :doc:`/topics/templates`.
 
     view
         Uma função responsável por retornar uma página.
