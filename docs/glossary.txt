@@ -29,7 +29,7 @@ Glossary
         Veja :ref:`the FAQ entry <faq-mtv>`.
 
     MVC
-        `Model-view-controller`__;um padrão de desenvolvimento de software. Django :ref:` veja MVC para mais detalhes <faq-mtv>`.
+        `Model-view-controller`__;um padrão de desenvolvimento de software. Django :ref:`veja MVC para mais detalhes <faq-mtv>`.
 
         __ http://en.wikipedia.org/wiki/Model-view-controller
 
