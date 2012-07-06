@@ -143,33 +143,31 @@ na qual os arquivos serão executados. A única cois que você pode assumir é
 que, no momento que seus arquivos customizados forem executados, todas as tabelas
 do banco de dados serão criadas.
 
-.. admonition:: Initial SQL data and testing
+.. admonition:: Testando dados iniciais em SQL
 
-    This technique *cannot* be used to provide initial data for
-    testing purposes. Django's test framework flushes the contents of
-    the test database after each test; as a result, any data added
-    using the custom SQL hook will be lost.
+    Essa técnica *não pode* ser usada para prover dados inicias com
+    propositos de teste. O framework de teste do Django limpa o conteúdo
+    do banco de dados de teste a cada teste; como resultado, nenhum dado adicionado
+    usando o mecanismo de SQL customizadas será perdido.
 
-    If you require data for a test case, you should add it using
-    either a :ref:`test fixture <topics-testing-fixtures>`, or
-    programatically add it during the ``setUp()`` of your test case.
+    Se você precisa de dados para um caso de teste, você deve adiciona-los usando
+    uma :ref:`fixture de teste <topics-testing-fixtures>`, ou
+    programaticamente adiciona-los durante o ``setUp()`` do seu
+    caso de teste.
 
-Database-backend-specific SQL data
-----------------------------------
+Dados SQL para um backend de banco de dados específico
+------------------------------------------------------
 
-There's also a hook for backend-specific SQL data. For example, you
-can have separate initial-data files for PostgreSQL and SQLite. For
-each app, Django looks for a file called
-``<appname>/sql/<modelname>.<backend>.sql``, where ``<appname>`` is
-your app directory, ``<modelname>`` is the model's name in lowercase
-and ``<backend>`` is the last part of the module name provided for the
-:setting:`ENGINE` in your settings file (e.g., if you have defined a
-database with an :setting:`ENGINE` value of
-``django.db.backends.sqlite3``, Django will look for
-``<appname>/sql/<modelname>.sqlite3.sql``).
+Existe também um mecanismo para dados em SQL de um backend específico. Por exemplo, você
+pode separar arquivos com dados iniciais para PostgreSQL e SQLite. Para cada aplicação,
+O Django procura por um arquivo chamado ``<nomedaaplicacao>/sql/<nomedomodel>.<backend>.sql``,
+onde ``<nomedaaplicacao>`` é o diretório da sua aplicação, ``<nomedomodel>`` é
+o nome do model em minúsculos e ``<backend>`` é o última parte do nome do módulo
+configurado no :setting:`ENGINE` no seu arquivo settings (e.g., se você tem um
+:setting:`ENGINE` de banco de dados com o valor ``django.db.backends.sqlite3``,
+o Django vai procurar por ``<appname>/sql/<modelname>.sqlite3.sql``).
 
-Backend-specific SQL data is executed before non-backend-specific SQL
-data. For example, if your app contains the files ``sql/person.sql``
-and ``sql/person.sqlite3.sql`` and you're installing the app on
-SQLite, Django will execute the contents of
-``sql/person.sqlite.sql`` first, then ``sql/person.sql``.
+Dados SQL para um backend específico são executados antes do dados não
+específicos. Por exemplo, se sua aplicação contém arquivos ``sql/person.sql``
+e ``sql/person.sqlite3.sql`` e você está instalando a aplicação no SQLite,
+O Django vai executar o conteúdo de ``sql/person.sqlite.sql`` primeiro, e então ``sql/person.sql``.
