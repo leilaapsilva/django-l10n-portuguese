@@ -14,5 +14,8 @@ no prompt do shell.
 
 A documentação em _build/html/index.html pode então ser vista em um browser.
 
+A documentação traduzida pode ser vista no Read the Docs [3]
+
 [1] http://docutils.sourceforge.net/rst.html
 [2] http://sphinx.pocoo.org/
+[3] http://django-portuguese.readthedocs.org/en/latest/
