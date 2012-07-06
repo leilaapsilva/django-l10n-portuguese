@@ -133,15 +133,15 @@ Cada arquivo SQL, caso ele exista, é esperado que contenha comando SQL válidos
 que irão inserir os dados desejados (e.g., comandos ``INSERT`` devidamente
 formatados e separados por ponto e virgula).
 
-The SQL files are read by the :djadmin:`sqlcustom`, :djadmin:`sqlreset`,
-:djadmin:`sqlall` and :djadmin:`reset` commands in :doc:`manage.py
-</ref/django-admin>`. Refer to the :doc:`manage.py documentation
-</ref/django-admin>` for more information.
+Os arquivos SQL são lidos pelos comandos :djadmin:`sqlcustom`, :djadmin:`sqlreset`,
+:djadmin:`sqlall` e :djadmin:`reset` no :doc:`manage.py
+</ref/django-admin>`. Veja a documentação :doc:`manage.py documentation
+</ref/django-admin>` para mais informações.
 
-Note that if you have multiple SQL data files, there's no guarantee of
-the order in which they're executed. The only thing you can assume is
-that, by the time your custom data files are executed, all the
-database tables already will have been created.
+Note que se você tem multiplos arquivos SQL com dados, não existe garantia da ordem
+na qual os arquivos serão executados. A única cois que você pode assumir é
+que, no momento que seus arquivos customizados forem executados, todas as tabelas
+do banco de dados serão criadas.
 
 .. admonition:: Initial SQL data and testing
 
