@@ -1,11 +1,14 @@
-====================================
-Writing custom django-admin commands
-====================================
+.. META INFORMAÇÕES DA TRADUÇÃO
+.. Tradução: Denis Costa
+.. Revisão:
 
-Applications can register their own actions with ``manage.py``. For example,
-you might want to add a ``manage.py`` action for a Django app that you're
-distributing. In this document, we will be building a custom ``closepoll``
-command for the ``polls`` application from the
+=============================================
+Escrevendo comandos django-admin customizados
+=============================================
+Aplicações podem registrar suas próprias ações no ``manage.py``. Por exemplo,
+você pode querer adicionar uma ação ao ``manage.py`` para uma aplicação Django
+que você está distribuindo. Neste documento, nós criaremos um comando ``closepoll``
+customizados para a aplicação ``polls`` do
 :doc:`tutorial</intro/tutorial01>`.
 
 To do this, just add a ``management/commands`` directory to the application.
