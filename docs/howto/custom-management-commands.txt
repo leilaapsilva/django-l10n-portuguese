@@ -27,13 +27,13 @@ cujo nome não começa com underscore. Por exemplo::
         tests.py
         views.py
 
-In this example, the ``closepoll`` command will be made available to any project
-that includes the ``polls`` application in :setting:`INSTALLED_APPS`.
+Neste exemplo, o comando ``closepoll`` estará disponível para qualquer projeto
+que inclua a aplicação ``polls`` no :setting:`INSTALLED_APPS`.
 
-The ``_private.py`` module will not be available as a management command.
+O módulo ``_private.py`` módulo não estará disponível como um management command.
 
-The ``closepoll.py`` module has only one requirement -- it must define a class
-``Command`` that extends :class:`BaseCommand` or one of its
+O mudulo ``closepoll.py``  tem apenas um requisito -- ele precisa definir uma classe
+``Command`` que extender de :class:`BaseCommand` ou de uma de suas
 :ref:`subclasses<ref-basecommand-subclasses>`.
 
 .. admonition:: Standalone scripts
