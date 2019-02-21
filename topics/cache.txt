@@ -27,7 +27,7 @@ muito maior que apenas a leitura de arquivos estáticos no disco.
 
 Para a maior parte dos aplicativos Web, esse overhead não é um problema. A maior
 parte das aplicações Web não são o washingtonpost.com oouslashdot.org; são simplesmente sites
-pequenos a médio com tráfico equivalente. Mas para aplicações de porte mério para grante,
+pequenos a médio com tráfico equivalente. Mas para aplicações de porte médio para grande,
 é essencial eliminar toda a sobrecarga possível.
 
 É onde entra o cache.
